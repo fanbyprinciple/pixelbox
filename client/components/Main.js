@@ -7,8 +7,11 @@ const Main = React.createClass({
             <div>
                 <h1>
                     <Link to="/">Pixelbox</Link>
-                    </h1>
+                </h1>
+                {React.cloneElement(this.props.children, this.props)}
             </div>
         )
     }
 });
+
+export default Main;
